@@ -11,23 +11,21 @@
 
     <!-- CSS para la foto de perfil -->
     <style>
-      /* Contenedor de la foto */
-      .profile-pic {
-        position: absolute;
-        top: calc(50% - 120px); /* foto encima del diamante */
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 999;
+      /* Contenedor de la foto dentro del header */
+      #header .profile-pic {
+        margin-bottom: 1.8rem;            /* separación respecto al diamante */
+        display: flex;
+        justify-content: center;
       }
 
       /* Estilo de la imagen */
-      .profile-pic img {
+      #header .profile-pic img {
         width: 120px;
         height: 120px;
         border-radius: 50%;
-        border: 3px solid white;
+        border: 3px solid #ffffff;
         object-fit: cover;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
       }
     </style>
   </head>
@@ -37,10 +35,13 @@
 
       <!-- Header -->
       <header id="header">
+
+        <!-- Foto centrada arriba del diamante -->
         <div class="profile-pic">
           <img src="images/Gutierrez.jpg" alt="Ariana Gutiérrez" />
         </div>
 
+        <!-- Diamante del template -->
         <div class="logo">
           <span class="icon fa-gem"></span>
         </div>
@@ -49,7 +50,7 @@
           <div class="inner">
             <h1>Ariana Marissa Gutierrez Cantorin</h1>
             <p>
-              Bachiller en Economía (Universidad del Pacífico).<br/>
+              Bachiller en Economía (Universidad del Pacífico).<br />
               Experiencia en gestión de productos de inversión, análisis financiero
               y automatización de reportes con Python, R, Stata y Excel.
             </p>
@@ -63,7 +64,6 @@
           </div>
         </div>
 
-
         <nav>
           <ul>
             <li><a href="#intro">Intro</a></li>
@@ -73,6 +73,7 @@
           </ul>
         </nav>
       </header>
+
 
       <!-- Main -->
       <div id="main">
@@ -244,6 +245,7 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
+
 
 
 
