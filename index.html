@@ -11,19 +11,17 @@
 
     <!-- CSS para la foto de perfil -->
     <style>
-      /* Contenedor de la foto */
-      .profile-pic {
-        position: absolute;
-        top: 6vh;              /* distancia desde la parte superior */
-        left: 50%;             /* centro horizontal */
-        transform: translateX(-50%);
-        z-index: 999;
+      /* Contenedor de la foto dentro del header */
+      #header .profile-pic {
+        margin-bottom: 1.8rem;            /* separación respecto al diamante */
+        display: flex;
+        justify-content: center;
       }
 
       /* Estilo de la imagen */
-      .profile-pic img {
-        width: 110px;
-        height: 110px;
+      #header .profile-pic img {
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         border: 3px solid #ffffff;
         object-fit: cover;
@@ -37,10 +35,13 @@
 
       <!-- Header -->
       <header id="header">
+
+        <!-- Foto centrada arriba del diamante -->
         <div class="profile-pic">
           <img src="images/Gutierrez.jpg" alt="Ariana Gutiérrez" />
         </div>
 
+        <!-- Diamante del template -->
         <div class="logo">
           <span class="icon fa-gem"></span>
         </div>
@@ -72,6 +73,7 @@
           </ul>
         </nav>
       </header>
+
 
       <!-- Main -->
       <div id="main">
@@ -243,6 +245,9 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
+
+
+
 
 
 
