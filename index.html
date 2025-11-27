@@ -9,16 +9,34 @@
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
 
-    <!-- CSS para la foto de perfil -->
+    <!-- ESTILOS PERSONALIZADOS -->
     <style>
-      /* Contenedor de la foto dentro del header */
+      /* Fondo general */
+      body {
+        background: url("images/fondo.jfif") no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      /* Oscurecer un poco el fondo para mejor lectura */
+      #wrapper:before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.55);
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      /* Foto de perfil centrada */
       #header .profile-pic {
-        margin-bottom: 1.8rem;            /* separación respecto al diamante */
+        margin-bottom: 1.8rem;
         display: flex;
         justify-content: center;
       }
 
-      /* Estilo de la imagen */
       #header .profile-pic img {
         width: 120px;
         height: 120px;
@@ -29,6 +47,7 @@
       }
     </style>
   </head>
+
 
   <body class="is-preload">
     <div id="wrapper">
@@ -245,6 +264,7 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
+
 
 
 
